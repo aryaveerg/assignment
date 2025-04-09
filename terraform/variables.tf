@@ -1,11 +1,7 @@
-variable "aws_region" {
-  default = "us-east-1"
-}
-
-variable "ami_id" {
-  description = "Amazon Linux 2 AMI or Ubuntu AMI"
-}
-
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
 variable "public_key_path" {
-  description = "Path to your public SSH key"
+  description = "Path to your public key"
+  default     = "~/.ssh/id_rsa.pub"
 }
+variable "dockerhub_username" {}
